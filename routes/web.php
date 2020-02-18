@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'TasksController@index');
+
+
+//CRUD 4つ＋補助 3つ
+Route::resource('tasks', 'TasksController');
+
+
+
