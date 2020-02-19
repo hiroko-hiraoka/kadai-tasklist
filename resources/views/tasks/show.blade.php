@@ -7,7 +7,15 @@
     <table class="table table-borderd">
         <tr>
             <th>id</th>
+            <td>{{ $task->id }}</td>
+        </tr>
+         <tr>
+            <th>課題</th>
             <td>{{ $task->content }}</td>
+        </tr>
+        <tr>
+            <th>進捗状況</th>
+            <td>{{ $task->status }}</td>
         </tr>
     </table>
     
